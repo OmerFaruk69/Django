@@ -1,0 +1,16 @@
+{% extends 'listings/base.html' %}
+
+
+{% block content %}
+        <p>J'ai :
+            {% if bands|length < 5 %}
+                <li> peu </li>
+            {% elif bands|length == 3 %}
+                <li>moyen</li>
+            {% else %}
+                <li>bcp</li>
+            {% endif %}
+        </p>
+            <p>de Groupe préféré</p>
+
+{% endblock %}
